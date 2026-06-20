@@ -1,0 +1,42 @@
+low = 1
+high = 100
+score = 0
+attempts = 0
+print("=== Number Guessing AI Agent ===")
+print("Think of a number between 1 and 100.")
+print("Give feedback after each guess:")
+print("  'high'  -> Guess is too high")
+print("  'low'  -> Guess is too low")
+print("  'correct'  -> Guess is correct\n")
+while True:
+    guess = (low + high) // 2
+    print(f"AI Agent guesses: {guess}")
+    feedback = input("Enter feedback (high/low/correct): ").lower()
+    attempts += 1
+    score -= 1
+    if feedback == 'high':
+        high = guess - 1
+        score -= 5
+        print("Penality: -5 (Guess too high)")
+    elif feedback == 'low':
+        low = guess + 1
+        score -= 5
+        print("Penality: -5 (Guess too low)")
+    elif feedback == 'correct':
+        score += 100
+        print("Reward: +100 (Correct guess!)")
+    if attempts <= 5:
+        score += 20
+        print("Bonus Reward: +20 (Guessed within 5 attempts!)")
+    elif attempts > 10:
+        score -= 20
+        print("Penality -20 (Took more than 10 attempts)")
+        print("\n=== GAME OVER ===")
+        print(f"Number guessed correctly in {attempts} attempts.")
+        print(f"Final Score: {score}")
+        break
+    else:
+        print("Invalid feedback. Please enter 'high', 'low', or 'correct'.")
+        attempts -= 1
+        score += 1
+    print("-" * 40)
