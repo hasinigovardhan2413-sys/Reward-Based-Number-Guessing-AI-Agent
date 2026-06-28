@@ -36,7 +36,7 @@ This project demonstrates **AI Agent Design** and **Reinforcement Learning** by 
 
 ## 🧠 Architecture: Perceive → Think → Act → Repeat
 
-```
+````````````
 ┌─────────────────────────────────────────┐
 │   PERCEIVE                              │
 │   ├─ Current state                      │
@@ -107,7 +107,7 @@ pip install -r requirements.txt
 
 ### Basic Example
 
-```python
+````python
 from ai_agent import NumberGuessingAgent
 
 # Create an agent
@@ -121,11 +121,11 @@ print(f"Game score: {score}")
 for game in range(5):
     score = agent.play_game()
     print(f"Game {game+1}: Score = {score}")
-```
+`````
 
 ### Advanced Usage
 
-```python
+````python
 # Create agent with custom parameters
 agent = NumberGuessingAgent(
     min_num=1,
