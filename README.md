@@ -37,7 +37,7 @@ This project demonstrates **AI Agent Design** and **Reinforcement Learning** by 
 
 ## 🧠 Architecture: Perceive → Think → Act → Repeat
 
-````````````
+````````````````````
 ┌─────────────────────────────────────────┐
 │   PERCEIVE                              │
 │   ├─ Current state                      │
