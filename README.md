@@ -6,6 +6,7 @@
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](#contributing)
 
 An intelligent AI agent that learns to play a number guessing game through reinforcement learning. The agent improves its strategy over time by receiving rewards for correct guesses and penalties for incorrect ones, using the Perceive → Think → Act → Repeat cycle.
+````````````````
 
 ## 📋 Table of Contents
 - [Overview](#overview)
